@@ -4,8 +4,21 @@
 
 //this is just trusting the user's input to be an even number. If we're prompting only once, there is no choice but to.
 var user_input;
-user_input = prompt("Input an even number. An even number is 2k, where k is any positive integer.");
+user_input = prompt("Input an even number. An even number is 2k, where k is any positive integer or 0.");
 user_input = parseInt(user_input, 10);
+
+//or, jut to let the user know, can throw alert and Not parseInt the input if the user puts in a non-even number.
+
+//ok, I'm commiting and pushing this, since to answer following questions, I need to take a different approach (I need to delete, or at least modify a lot, this part) 
+var user_Input;
+user_Input = prompt("Input an even number. An even number is 2k, where k is any positive integer or 0.");
+if ( parseInt(user_Input, 10)%2 == 0 ) {
+    user_Input = parseInt(user_Input, 10);
+    alert("Awesome, " + user_Input + " is an even number!");
+} else {
+    alert("Eh, " + user_Input + " is not an even number.");    
+};
+
 
 
 
