@@ -1,15 +1,4 @@
-//Before commiting, delete all "commented out CODE"
-
-//2. Prompt the user once for an even number and save their answer to the variable user_input. Be sure to convert it to an integer.
-
-//this is just trusting the user's input to be an even number. If we're prompting only once, there is no choice but to.
-var user_input;
-user_input = prompt("Input an even number. An even number is 2k, where k is any positive integer or 0.");
-user_input = parseInt(user_input, 10);
-
-//or, jut to let the user know, can throw alert and Not parseInt the input if the user puts in a non-even number.
-
-//ok, I'm commiting and pushing this, since to answer following questions, I need to take a different approach (I need to delete, or at least modify a lot, this part) 
+//Just declaring a var, not yet assigning a particular value. i.e. "let user_input be nothing".
 var user_Input;
 user_Input = prompt("Input an even number. An even number is 2k, where k is any positive integer or 0.");
 if ( parseInt(user_Input, 10)%2 == 0 ) {
@@ -22,8 +11,25 @@ if ( parseInt(user_Input, 10)%2 == 0 ) {
 
 
 
+//2. Prompt the user once for an even number and save their answer to the variable user_input. Be sure to convert it to an integer.
 
 //3. Using a do...while loop, keep asking the user for an even number until they enter an even number. At this point, there should be only one prompt() call in your code.
+
+var user_input;
+user_iput = prompt("enter an even number. And even number is 2k, where k is any positive integer or zero.");
+user_input = parseInt(user_input, 10);
+console.log(user_input);
+//AAAAAAAHHHHH WTH is wrong !! why do you keep saying user_input is not a number !! DANG
+
+
+/*
+do{
+    unser_input = prompt("Input an even number. An even number is 2k, where k is any positive integer or 0.");
+    unser_input = parseInt(unser_input, 10); 
+} while(parseInt(user_input, 10)%2 != 0);
+*/
+
+
 
 //4. Prompt the user once for an odd number and save their answer to the variable user_input. Be sure to convert it to an integer.
 
@@ -35,4 +41,4 @@ if ( parseInt(user_Input, 10)%2 == 0 ) {
 
 //8. Be sure to test your code before turning it in.
 
-console.log("메롱", user_input);
+console.log("메롱", user_Input);
