@@ -1,4 +1,5 @@
 //Just declaring a var, not yet assigning a particular value. i.e. "let user_input be nothing".
+/*
 var user_Input;
 user_Input = prompt("Input an even number. An even number is 2k, where k is any positive integer or 0.");
 if ( parseInt(user_Input, 10)%2 == 0 ) {
@@ -7,6 +8,7 @@ if ( parseInt(user_Input, 10)%2 == 0 ) {
 } else {
     alert("Eh, " + user_Input + " is not an even number.");    
 };
+*/
 
 
 
@@ -15,11 +17,26 @@ if ( parseInt(user_Input, 10)%2 == 0 ) {
 
 //3. Using a do...while loop, keep asking the user for an even number until they enter an even number. At this point, there should be only one prompt() call in your code.
 
+//WORKS! FINALLY!
+/*
 var user_input;
-user_iput = prompt("enter an even number. And even number is 2k, where k is any positive integer or zero.");
+user_input = prompt("enter an even number. And even number is 2k, where k is any positive integer or zero.");
 user_input = parseInt(user_input, 10);
 console.log(user_input);
-//AAAAAAAHHHHH WTH is wrong !! why do you keep saying user_input is not a number !! DANG
+*/
+
+var user_input;
+do {
+    user_input = prompt("Enter an even number. And even number is 2k, where k is any positive integer or zero.");
+    user_input = praseInt(user_input, 10);
+} while ( user_input % 2 != 0 );
+
+let anSwer; 
+do{
+    anSwer = prompt("Enter 10. Or pop-up will keep asking.");
+    anSwer = parseInt(anSwer, 10); 
+} while(anSwer != 10);
+
 
 
 /*
